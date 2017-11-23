@@ -1,0 +1,159 @@
+﻿<div id="editproductWrapper">
+    <hr>
+    <div class="">
+        <div class="panel panel-success" id="panelLatestProducts">
+            <div class="panel-heading">
+                <h3 class="panel-title" style="text-align:center">Add Admin/Staff</h3>
+            </div>
+            <div class="panel-body">
+                <!-- edit form column -->
+                <div class="col-xs-12 personal-info" style="margin-top:20px">
+                    <form class="well form-horizontal" role="form" novalidate angular-validator name="addUserForm" angular-validator-submit="register()">
+                        <fieldset>
+
+
+                            <div class="form-group">
+                                <div class="col-sm-offset-4">
+                                    <label class="col-md-4 control-label" style="font-size:30px">
+                                        ADMIN/STAFF
+                                        <!--<h3>
+                                            ADMIN
+                                            <input type="checkbox" id="users" name="users" ng-change="hide(users)" ng-model="users" ng-true-value="'YES'" ng-false-value="'NO'">
+                                        </h3>-->
+                                    </label>
+
+                                    <!--<label class="col-md-4 control-label">
+                                        <h3>
+                                            <input type="checkbox" id="company" name="company" ng-change="hide(company)" ng-model="company" ng-true-value="'YES'" ng-false-value="'NO'">
+                                            COMPANY
+                                        </h3>
+                                    </label>-->
+                                </div>
+                            </div>
+
+                            <!--<div class="form-group" ng-if="company=='YES'">
+                                <label class="col-md-4 control-label">Company</label>
+                                <div class="col-md-4 inputGroupContainer">
+                                    <div class="input-group">
+                                        <span class="input-group-addon"><i class="glyphicon glyphicon-star"></i></span>
+                                        <select ng-model="user.CompanyInfoID" class="form-control black" ng-options="c.ID as c.FullName for c in CompanyList"> </select>
+                                        <input type="hidden" name="CompanyId" ng-value="user.CompanyInfoID" />
+
+                                    </div>
+                                </div>
+                            </div>-->
+
+                            <div class="form-group">
+                                <label class="col-md-4 control-label">User Role</label>
+                                <div class="col-md-4 inputGroupContainer">
+                                    <div class="input-group">
+                                        <span class="input-group-addon"><i class="fa fa-user"></i></span>
+                                        <select ng-model="user.RoleId" class="form-control black" ng-options="c.ID as c.Name for c in Roles"></select>
+                                        <input type="hidden" name="RoleId" ng-value="user.RoleId" />
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--<div class="form-group" ng-if="user.RoleId==3 ">
+                                <label class="col-md-4 control-label">Labor Approval No</label>
+                                <div class="col-md-4 inputGroupContainer">
+                                    <div class="input-group">
+                                        <span class="input-group-addon"><i class="glyphicon glyphicon-star"></i></span>
+                                        <select ng-model="user.ClientNoticeId" class="form-control black" ng-options="c.ID as c.NoticeNo for c in LaborNo" ></select>
+                                        <input type="hidden" name="ClientNoticeId" ng-value="user.ClientNoticeId" />
+                                    </div>
+                                </div>
+                            </div>-->
+
+                            <div class="form-group">
+                                <label class="col-md-4 control-label">Name</label>
+                                <div class="col-md-4 inputGroupContainer">
+                                    <div class="input-group">
+                                        <span class="input-group-addon"><i class="fa fa-user"></i></span>
+                                        <input name="full_name" placeholder="Full Name" class="form-control" type="text" ng-model="user.UserName" required>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-md-4 control-label">Password</label>
+                                <div class="col-md-4 inputGroupContainer">
+                                    <div class="input-group">
+                                        <span class="input-group-addon"><i class="fa fa-user"></i></span>
+                                        <input name="password" placeholder="Password" class="form-control" type="password" ng-model="user.Password" required>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div ng-if="users=='YES'">
+
+                                <div class="form-group">
+                                    <label class="col-md-4 control-label">Mobile/Phone #</label>
+                                    <div class="col-md-4 inputGroupContainer">
+                                        <div class="input-group">
+                                            <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
+                                            <input name="phone" placeholder="Mobile/Phone" class="form-control" type="text" phone-input ng-model="user.Phone">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-md-4 control-label">Address</label>
+                                    <div class="col-md-4 inputGroupContainer">
+                                        <div class="input-group">
+                                            <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
+                                            <input name="address" placeholder="Address" class="form-control" type="text" ng-model="user.Address">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-md-4 control-label">E-Mail</label>
+                                    <div class="col-md-4 inputGroupContainer">
+                                        <div class="input-group">
+                                            <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+                                            <input name="email" placeholder="E-Mail " class="form-control" type="text" ng-model="user.Email">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-md-4 control-label">Registration Date</label>
+                                    <div class="col-md-4 inputGroupContainer">
+                                        <div class="input-group">
+                                            <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
+                                            <input name="regdate" placeholder="Registration Date" class="form-control" type="text" ng-model="user.DateCreated">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-md-4 control-label">Remarks</label>
+                                    <div class="col-md-4 inputGroupContainer">
+                                        <div class="input-group">
+                                            <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
+                                            <textarea class="form-control" name="comment" placeholder="Remarks" ng-model="user.Remarks"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <br />
+                            <div class="form-group col-sm-7">
+                                <label class="control-label"></label>
+                                <div class="pull-right">
+                                    <input type="submit" class="btn btn-success" value="Add User" />
+                                    <span></span>
+                                    <a class="btn btn-info" ng-href="#/login">Cancel</a>
+                                    <span></span>
+                                    <a class="btn btn-info" ng-disabled="addUserForm.$pristine" ng-click="resetForm()">Clear</a>
+                                </div>
+                            </div>
+                        </fieldset>
+
+                    </form>
+
+                </div>
+
+            </div>
+        </div>
+
+        <hr>
+    </div>
+</div>

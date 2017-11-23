@@ -1,0 +1,115 @@
+﻿<div id="editproductWrapper">
+    <hr>
+    <div class="">
+        <div class="panel panel-success" id="panelLatestProducts">
+            <div class="panel-heading">
+                <h3 class="panel-title" style="text-align:center">Add Trainee</h3>
+            </div>
+            <div class="panel-body">
+                <!-- edit form column -->
+                <div class="col-xs-12 personal-info">
+                    <form class="well form-horizontal" role="form" novalidate angular-validator name="addTraineeForm" angular-validator-submit="AddTrainee()">
+                        <fieldset>
+                            <div class="form-group">
+                                <label class="col-md-4 control-label">Name</label>
+                                <div class="col-md-4 inputGroupContainer">
+                                    <div class="input-group">
+                                        <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                        <input name="full_name" placeholder="Full Name" class="form-control" type="text" ng-model="data.Name">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-md-4 control-label">Grade</label>
+                                <div class="col-md-4 inputGroupContainer">
+                                    <div class="input-group">
+                                        <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                        <input name="full_name" placeholder="Grade" class="form-control" type="text" ng-model="data.Grade">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-md-4 control-label">Email</label>
+                                <div class="col-md-4 inputGroupContainer">
+                                    <div class="input-group">
+                                        <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+                                        <input name="Email" placeholder="Email" class="form-control" type="text" ng-model="data.Email">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-md-4 control-label">Date Joined</label>
+                                <div class="col-md-4 inputGroupContainer">
+                                    <div class="input-group">
+                                        <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
+                                        <input name="Date" placeholder="Date" class="form-control" type="text" ng-model="data.DateJoined">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-md-4 control-label">Address</label>
+                                <div class="col-md-4 inputGroupContainer">
+                                    <div class="input-group">
+                                        <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
+                                        <input name="Address" placeholder="Address" class="form-control" type="text" ng-model="data.Address">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-md-4 control-label">City</label>
+                                <div class="col-md-4 inputGroupContainer">
+                                    <div class="input-group">
+                                        <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
+                                        <input name="City" placeholder="City" class="form-control" type="text" ng-model="data.City">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-md-4 control-label">Country</label>
+                                <div class="col-md-4 inputGroupContainer">
+                                    <div class="input-group">
+                                        <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
+                                        <input name="Country" placeholder="Country" class="form-control" type="text" ng-model="data.Country">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-md-4 control-label">ZIP</label>
+                                <div class="col-md-4 inputGroupContainer">
+                                    <div class="input-group">
+                                        <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
+                                        <input name="Zip" placeholder="Zip" class="form-control" type="text" ng-model="data.Zip">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-md-4 control-label">Subject</label>
+                                <div class="col-md-4 inputGroupContainer">
+                                    <div class="input-group">
+                                        <span class="input-group-addon"><i class="glyphicon glyphicon-book"></i></span>
+                                        <input name="Subject" placeholder="Subject" class="form-control" type="text" ng-model="data.Subject">
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <br />
+                            <div class="form-group col-sm-7">
+                                <label class="control-label"></label>
+                                <div class="pull-right">
+                                    <input type="submit"  class="btn btn-success" value="Add Trainee" />
+                                    <span></span>      
+                                  
+                                </div>
+                            </div>
+                        </fieldset>
+
+                    </form>
+
+                </div>
+
+            </div>
+        </div>
+
+        <hr>
+    </div>
+</div>

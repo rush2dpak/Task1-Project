@@ -1,0 +1,115 @@
+﻿<div id="editproductWrapper">
+    <hr>
+
+    <div class="panel panel-success" >
+        <div class="panel-heading">
+            <h3 class="panel-title" style="text-align:center"> Details</h3>
+        </div>
+     
+        <div class="panel-body">
+            <!-- edit form column -->
+
+            <!--<form class="form-horizontal" role="form" novalidate angular-validator name="newDataForm" angular-validator-submit="UpdateRecord()"-->>
+                <div class="form-group">
+                    <label class="col-sm-1 control-label">ID. :</label>
+                    <div class="col-sm-10">
+                        {{Record.ID}}
+                    </div>
+                   
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-1 control-label">Name :</label>
+                    <div class="col-sm-10">
+                       
+                        <span ng-hide="Record.editing">{{Record.Name}}</span>
+                        <input ng-show="Record.editing" name="Name" class="form-control" type="text" ng-model="Record.Name" autofocus>
+                    </div>                 
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-1 control-label">Grade :</label>
+                    <div class="col-sm-10">
+                        <span ng-hide="Record.editing">{{Record.Grade}}</span>
+                        <input ng-show="Record.editing" name="Grade" class="form-control" type="text" ng-model="Record.Grade" autofocus>
+                       
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-1 control-label">Email :</label>
+                    <div class="col-sm-10">
+                        <span ng-hide="Record.editing">{{Record.Email}}</span>
+                        <input ng-show="Record.editing" name="Email" class="form-control" type="text" ng-model="Record.Email" autofocus>
+                     
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-1 control-label">Date Joined :</label>
+                    <div class="col-sm-10">
+                        <span ng-hide="Record.editing">{{Record.DateJoined}}</span>
+                        <input ng-show="Record.editing" name="DateJoined" class="form-control" type="text" ng-model="Record.DateJoined" autofocus>
+                      
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-1 control-label">Address :</label>
+                    <div class="col-sm-10">
+                        <span ng-hide="Record.editing">{{Record.Address}}</span>
+                        <input ng-show="Record.editing" name="Address" class="form-control" type="text" ng-model="Record.Address" autofocus>
+                       
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-1 control-label">City :</label>
+                    <div class="col-sm-10">
+                        <span ng-hide="Record.editing">{{Record.City}}</span>
+                        <input ng-show="Record.editing" name="City" class="form-control" type="text" ng-model="Record.City" autofocus>
+                     
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-1 control-label">Country :</label>
+                    <div class="col-sm-10">
+                        <span ng-hide="Record.editing">{{Record.Country}}</span>
+                        <input ng-show="Record.editing" name="Country" class="form-control" type="text" ng-model="Record.Country" autofocus>
+                       
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-1 control-label">ZIP :</label>
+                    <div class="col-sm-10">
+                        <span ng-hide="Record.editing">{{Record.Zip}}</span>
+                        <input ng-show="Record.editing" name="Zip" class="form-control" type="text" ng-model="Record.Zip" autofocus>
+                      
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-1 control-label">Subject :</label>
+                    <div class="col-sm-10">
+                        <span ng-hide="Record.editing">{{Record.Subject}}</span>
+                        <input ng-show="Record.editing" name="Subject" class="form-control" type="text" ng-model="Record.Subject" autofocus>
+                      
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-offset-5 col-sm-5">
+                        <div ng-hide="!Record.editing" class="col-md-2">
+                            <a ng-click="updateEditRecord(Record);cancelEditing(Record);" class="btn btn-success">
+                                Update
+                            </a>
+                            <a ng-click="cancelEditing(Record)" class="btn btn-danger"> Cancel </a>
+                        </div>
+                        <!--<a class="btn btn-primary fancybox-media" ng-href="#/products/edit/{{product.ID}}">Edit</a>
+                        <span></span>
+                        <a class="btn btn-primary fancybox-media" ng-href="#/productList">Cancel</a>-->
+                    </div>
+                </div>
+
+            <!--</form>-->
+
+        </div>
+    </div>
+    <!--</div>-->
+    <hr>
+</div>
+
+
+

@@ -1,0 +1,36 @@
+﻿<div class="row col-sm-4 col-sm-offset-4" style="margin-top:100px">
+    <form class="form-signin" role="form" novalidate angular-validator name="userLoginForm" angular-validator-submit="login()">
+        <h3 class="form-signin-heading ">SIGN IN</h3>
+        <div class="form-group">
+            <label for="inputUsername" class="sr-only">Username</label>
+            <input type="text" id="inputUsername" name="inputUsername" class="form-control" ng-model="user.username" ng-blur="getuserRole(user.username)" placeholder="Username"
+                   validate-on="blur" required required-message="'Username is required'">
+           
+        </div>
+       
+        
+        <div class="form-group">
+            <label for="inputPassword" class="sr-only">Password</label>
+            <input type="password" id="inputPassword" name="inputPassword" class="form-control" ng-model="user.password" placeholder="Password"
+                   validate-on="blur" required required-message="'Password is required'">
+        </div>
+        <div class="form-group hidden">
+            
+            <input type="text" id="inputUserRole" name="inputUserRole" class="form-control"
+                    ng-model="user.userrole" placeholder="UserRole" validate-on="blur" >
+
+            <input type="text" id="inputCompany" name="inputCompany" class="form-control"
+                   ng-model="user.compid" placeholder="Company" validate-on="blur">
+
+            <input type="text" id="inputCompanyname" name="inputCompanyname" class="form-control"
+                   ng-model="user.compname" placeholder="CompanyName" validate-on="blur">
+        </div>
+
+        <a href="#/data" class="btn btn-lg btn-success btn-block" ng-disabled="userLoginForm.$invalid" ng-click="login()">SIGN IN</a>
+        <div class="pull-right">
+
+            <a  ng-href="#/register" class="control-label">Register</a>
+        </div>
+
+    </form>
+</div>
